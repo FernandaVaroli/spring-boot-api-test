@@ -13,6 +13,11 @@ public class HelloController {
     @RequestMapping("/")
     public String index() {
         return "Greetings from Spring Boot!";
+    } 
+
+    @RequestMapping("/index2")
+    public String index2() {
+        return "Greetings from Spring Boot!2";
     }
     
     @RequestMapping(value = "/postTest", method = RequestMethod.POST)
