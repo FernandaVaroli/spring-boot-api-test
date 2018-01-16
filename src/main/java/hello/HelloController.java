@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @RestController
 public class HelloController {
+
+    @RequestMapping("/lucas")
+    public String indexLucas() {
+        return "Greetings from Lucas!";
+    } 
     
     @RequestMapping("/")
     public String index() {
@@ -18,6 +23,11 @@ public class HelloController {
     @RequestMapping("/index2")
     public String index2() {
         return "Greetings from Spring Boot!2";
+    }
+
+    @RequestMapping("/indexPokas")
+    public String indexPokas() {
+        return "Greetings from Pokas!";
     }
     
     @RequestMapping(value = "/postTest", method = RequestMethod.POST)
