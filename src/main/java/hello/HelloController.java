@@ -19,6 +19,11 @@ public class HelloController {
     public String index2() {
         return "Greetings from Spring Boot!2";
     }
+
+    @RequestMapping("/indexPokas")
+    public String indexPokas() {
+        return "Greetings from Pokas!";
+    }
     
     @RequestMapping(value = "/postTest", method = RequestMethod.POST)
     public ResponseEntity<Car> postTest(@RequestBody Car car) {
